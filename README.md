@@ -1,16 +1,64 @@
-# React + Vite
+🌍 Toor Travel Agency – React Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Krivam Toor Travel Agency website!
+This project is a simple and modern travel website made with React. It includes different pages such as Home, About Us, Services, Packages, and Contact Us.
 
-Currently, two official plugins are available:
+✨ Website Pages
+🏠 Home
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A clean and welcoming page that shows our main travel highlights.
 
-## React Compiler
+👥 About Us
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Information about who we are, what we do, and why customers choose our travel agency.
 
-## Expanding the ESLint configuration
+🛎️ Services
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A list of all the services we provide, such as tour planning, hotel booking, flight booking, transportation, and more.
+
+🎒 Packages
+
+Different travel packages like family trips, honeymoon packages, adventure tours, beach vacations, and custom offers.
+
+📞 Contact Us
+
+A simple page where visitors can contact us or send us a message.
+
+🛠️ Technologies Used
+
+This website is built with:
+
+React
+
+Vite
+
+React Router
+
+Bootstrap
+
+AOS (Animate On Scroll)
+
+React Icons
+
+🚀 How to Run the Project
+1️⃣ Install the required packages:
+npm install
+
+2️⃣ Start the development server:
+npm run dev
+
+3️⃣ Build the project for production:
+npm run build
+
+
+After building, the final files will be inside the dist/ folder.
+
+⭐ Features
+
+Fast and responsive design
+
+Easy to update and customize
+
+Smooth animations
+
+Simple structure for beginners
