@@ -21,15 +21,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Footer from './components/Footer';
+import RadionicSpinner from './components/RadionicSpinner';
 
-// Simple loading component
-const LoadingSpinner = () => (
-  <div className="d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
-    <div className="spinner-border text-primary" role="status">
-      <span className="visually-hidden">Loading...</span>
-    </div>
-  </div>
-);
+// Simple loading component - REMOVED in favor of RadionicSpinner
 
 function App() {
   useEffect(() => {
@@ -43,7 +37,7 @@ function App() {
     <Router>
       <div className="App">
         <Navigation />
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={<RadionicSpinner />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

@@ -1,64 +1,46 @@
-🌍 Toor Travel Agency – React Website
+# Task React Project
 
-Welcome to the Krivam Toor Travel Agency website!
-This project is a simple and modern travel website made with React. It includes different pages such as Home, About Us, Services, Packages, and Contact Us.
+A modern, responsive React application built with Vite, Bootstrap, and AOS (Animate On Scroll).
 
-✨ Website Pages
-🏠 Home
+## 🚀 Performance Optimizations
 
-A clean and welcoming page that shows our main travel highlights.
+We have recently implemented significant performance improvements to enhance the user experience and load times (targeting a previous 31% performance score).
 
-👥 About Us
+### Key Improvements:
+1.  **Code Splitting (Lazy Loading)**:
+    *   Implemented `React.lazy` and `Suspense` for all main routes (`Home`, `About`, `Services`, `Packages`, `Contact`).
+    *   **Benefit**: The browser now only downloads the code necessary for the current page, drastically reducing the initial bundle size. Users don't wait for the "Contact" page code to download just to view the "Home" page.
 
-Information about who we are, what we do, and why customers choose our travel agency.
+2.  **Strategic Chunking**:
+    *   Configured `vite.config.js` to split vendor libraries (React, Bootstrap, AOS) into their own separate chunks.
+    *   **Benefit**: These stable libraries are cached by the browser. When you update your app code, the user doesn't need to re-download these heavy libraries, leading to faster subsequent visits.
 
-🛎️ Services
+3.  **Build Optimization**:
+    *   Optimized Rollup options to ensure efficient asset output.
 
-A list of all the services we provide, such as tour planning, hotel booking, flight booking, transportation, and more.
+## 🛠️ Tech Stack
 
-🎒 Packages
+*   **Framework**: React 19
+*   **Build Tool**: Vite
+*   **Routing**: React Router DOM
+*   **Styling**: Bootstrap 5, Custom CSS
+*   **Animations**: AOS (Animate On Scroll)
+*   **Icons**: React Icons
 
-Different travel packages like family trips, honeymoon packages, adventure tours, beach vacations, and custom offers.
+## 📦 Installation & Running
 
-📞 Contact Us
+1.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-A simple page where visitors can contact us or send us a message.
+2.  **Start development server**:
+    ```bash
+    npm run dev
+    ```
 
-🛠️ Technologies Used
-
-This website is built with:
-
-React
-
-Vite
-
-React Router
-
-Bootstrap
-
-AOS (Animate On Scroll)
-
-React Icons
-
-🚀 How to Run the Project
-1️⃣ Install the required packages:
-npm install
-
-2️⃣ Start the development server:
-npm run dev
-
-3️⃣ Build the project for production:
-npm run build
-
-
-After building, the final files will be inside the dist/ folder.
-
-⭐ Features
-
-Fast and responsive design
-
-Easy to update and customize
-
-Smooth animations
-
-Simple structure for beginners
+3.  **Build for production**:
+    ```bash
+    npm run build
+    ```
+    *Check the `dist/` folder to see the optimized chunks in action.*
